@@ -45,6 +45,8 @@ jobs:
   publish-nuget:
     needs: build-and-test
     runs-on: windows-latest
+    permissions:
+      contents: write  # This is the magic line to allow creating releases
     if: github.event_name == 'push' && github.ref == 'refs/heads/main'
     
     steps:
