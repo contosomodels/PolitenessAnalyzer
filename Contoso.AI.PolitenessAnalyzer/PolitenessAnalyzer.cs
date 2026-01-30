@@ -17,7 +17,6 @@ public sealed class PolitenessAnalyzer : IDisposable
     private static List<OrtEpDevice>? _availableDevices;
     
     private InferenceSession? _inferenceSession;
-    private PerformanceMode _performanceMode;
     private const int MaxSequenceLength = 512;
 
     public event EventHandler<string>? InitializationStatusChanged;
@@ -107,7 +106,7 @@ public sealed class PolitenessAnalyzer : IDisposable
         throw new FileNotFoundException($"Model file not found at: {modelPath}");
     }
 
-    public static async Task<PolitenessAnalyzer> CreateAsync(PerformanceMode performanceMode = PerformanceMode.Performance)
+    public static async Task<PolitenessAnalyzer> CreateAsync()
     {
         if (_readyState != AIFeatureReadyState.Ready)
         {
@@ -120,8 +119,7 @@ public sealed class PolitenessAnalyzer : IDisposable
 
         var analyzer = new PolitenessAnalyzer();
         
-        analyzer._performanceMode = performanceMode;
-        analyzer._inferenceSession = await Task.Run(() => analyzer.CreateInferenceSession(performanceMode));
+        analyzer._inferenceSession = await Task.Run(() => analyzer.CreateInferenceSession());
 
         return analyzer;
     }
@@ -157,7 +155,7 @@ public sealed class PolitenessAnalyzer : IDisposable
         };
     }
 
-    private InferenceSession CreateInferenceSession(PerformanceMode performanceMode)
+    private InferenceSession CreateInferenceSession()
     {
         if (_sharedOrtEnv == null || _modelPath == null)
         {
