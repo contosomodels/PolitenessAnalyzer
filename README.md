@@ -1,10 +1,10 @@
-# Contoso.AI.PolitenessAnalysis
+# Contoso.AI.PolitenessAnalyzer
 
 [![Build, Test, and Publish](https://github.com/contosomodels/PolitenessAnalyzer/actions/workflows/build-and-publish.yml/badge.svg)](https://github.com/contosomodels/PolitenessAnalyzer/actions/workflows/build-and-publish.yml)
 [![NuGet](https://img.shields.io/nuget/v/Contoso.AI.PolitenessAnalyzer.svg)](https://www.nuget.org/packages/Contoso.AI.PolitenessAnalyzer/)
 [![NuGet Downloads](https://img.shields.io/nuget/dt/Contoso.AI.PolitenessAnalyzer.svg)](https://www.nuget.org/packages/Contoso.AI.PolitenessAnalyzer/)
 
-AI-powered politeness analysis for text using ONNX Runtime and the Intel polite-guard model. Built for .NET 8 on Windows with the Windows App SDK.
+AI-powered politeness analyzer for text using ONNX Runtime and the Intel polite-guard model. Built for .NET 8 on Windows with the Windows App SDK.
 
 ## ✨ Features
 
