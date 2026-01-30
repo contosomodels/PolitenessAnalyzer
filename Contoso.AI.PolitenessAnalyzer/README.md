@@ -1,4 +1,4 @@
-# Contoso.AI.PolitenessAnalysis
+# Contoso.AI.PolitenessAnalyzer
 
 AI-powered politeness analysis for text using ONNX Runtime and a BERT-based model.
 
@@ -14,7 +14,7 @@ AI-powered politeness analysis for text using ONNX Runtime and a BERT-based mode
 ## Installation
 
 ```bash
-dotnet add package Contoso.AI.PolitenessAnalysis
+dotnet add package Contoso.AI.PolitenessAnalyzer
 ```
 
 **Platform Requirements:**
@@ -33,7 +33,7 @@ dotnet add package Contoso.AI.PolitenessAnalysis
 ## Usage
 
 ```csharp
-using Contoso.AI.PolitenessAnalysis;
+using Contoso.AI.PolitenessAnalyzer;
 
 // Initialize (call once at startup)
 var readyResult = await PolitenessAnalyzer.EnsureReadyAsync();
