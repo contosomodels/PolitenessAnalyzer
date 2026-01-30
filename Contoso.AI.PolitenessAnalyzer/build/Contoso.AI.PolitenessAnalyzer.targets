@@ -16,8 +16,8 @@
     <MakeDir Directories="$(ModelDirectory)" Condition="!Exists('$(ModelDirectory)')" />
     
     <!-- Download model if it doesn't exist -->
-    <Message Text="[Contoso.AI.PolitenessAnalysis] Checking for model at: $(ModelFilePath)" Importance="high" />
-    <Message Text="[Contoso.AI.PolitenessAnalysis] Model already exists, skipping download." Importance="high" Condition="Exists('$(ModelFilePath)')" />
+    <Message Text="[Contoso.AI.PolitenessAnalyzer] Checking for model at: $(ModelFilePath)" Importance="high" />
+    <Message Text="[Contoso.AI.PolitenessAnalyzer] Model already exists, skipping download." Importance="high" Condition="Exists('$(ModelFilePath)')" />
     
     <DownloadFile 
       SourceUrl="$(ModelUrl)" 
@@ -26,7 +26,7 @@
       Condition="!Exists('$(ModelFilePath)')"
       SkipUnchangedFiles="true" />
       
-    <Message Text="[Contoso.AI.PolitenessAnalysis] Model downloaded successfully to: $(ModelFilePath)" Importance="high" Condition="!Exists('$(ModelFilePath)')" />
+    <Message Text="[Contoso.AI.PolitenessAnalyzer] Model downloaded successfully to: $(ModelFilePath)" Importance="high" Condition="!Exists('$(ModelFilePath)')" />
     
     <!-- Add the model to content items so it gets copied to output -->
     <ItemGroup>

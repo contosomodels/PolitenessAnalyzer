@@ -1,8 +1,8 @@
 # Contoso.AI.PolitenessAnalysis
 
 [![Build, Test, and Publish](https://github.com/contosomodels/PolitenessAnalyzer/actions/workflows/build-and-publish.yml/badge.svg)](https://github.com/contosomodels/PolitenessAnalyzer/actions/workflows/build-and-publish.yml)
-[![NuGet](https://img.shields.io/nuget/v/Contoso.AI.PolitenessAnalysis.svg)](https://www.nuget.org/packages/Contoso.AI.PolitenessAnalysis/)
-[![NuGet Downloads](https://img.shields.io/nuget/dt/Contoso.AI.PolitenessAnalysis.svg)](https://www.nuget.org/packages/Contoso.AI.PolitenessAnalysis/)
+[![NuGet](https://img.shields.io/nuget/v/Contoso.AI.PolitenessAnalyzer.svg)](https://www.nuget.org/packages/Contoso.AI.PolitenessAnalyzer/)
+[![NuGet Downloads](https://img.shields.io/nuget/dt/Contoso.AI.PolitenessAnalyzer.svg)](https://www.nuget.org/packages/Contoso.AI.PolitenessAnalyzer/)
 
 AI-powered politeness analysis for text using ONNX Runtime and the Intel polite-guard model. Built for .NET 8 on Windows with the Windows App SDK.
 
@@ -20,7 +20,7 @@ AI-powered politeness analysis for text using ONNX Runtime and the Intel polite-
 ### Installation
 
 ```bash
-dotnet add package Contoso.AI.PolitenessAnalysis
+dotnet add package Contoso.AI.PolitenessAnalyzer
 ```
 
 ### Basic Usage
@@ -257,7 +257,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 - **Issues**: [GitHub Issues](https://github.com/contosomodels/PolitenessAnalyzer/issues)
 - **Discussions**: [GitHub Discussions](https://github.com/contosomodels/PolitenessAnalyzer/discussions)
-- **NuGet**: [Package Page](https://www.nuget.org/packages/Contoso.AI.PolitenessAnalysis/)
+- **NuGet**: [Package Page](https://www.nuget.org/packages/Contoso.AI.PolitenessAnalyzer/)
 
 ## ??? Roadmap
 

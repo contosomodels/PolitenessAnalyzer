@@ -61,7 +61,7 @@ git push origin main
 
 - View workflow runs: Go to **Actions** tab in your GitHub repository
 - Check logs for each step
-- Verify packages published at: https://www.nuget.org/packages/Contoso.AI.PolitenessAnalysis/
+- Verify packages published at: https://www.nuget.org/packages/Contoso.AI.PolitenessAnalyzer/
 
 ## ?? Troubleshooting
 
