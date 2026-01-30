@@ -6,16 +6,16 @@
 
 AI-powered politeness analysis for text using ONNX Runtime and the Intel polite-guard model. Built for .NET 8 on Windows with the Windows App SDK.
 
-## ? Features
+## ✨ Features
 
-- ?? **AI-Powered Analysis** - Uses Intel's polite-guard ONNX model for accurate politeness detection
-- ?? **Four Politeness Levels** - Polite, Somewhat Polite, Neutral, Impolite
-- ? **Fast Inference** - Optimized ONNX Runtime execution
-- ?? **Windows Native** - Built with Windows App SDK for optimal performance
-- ?? **Easy Integration** - Simple NuGet package with automatic model download
-- ?? **Type Safe** - Full C# type safety with nullable reference types
+- 🤖 **AI-Powered Analysis** - Uses Intel's polite-guard ONNX model for accurate politeness detection
+- 📊 **Four Politeness Levels** - Polite, Somewhat Polite, Neutral, Impolite
+- ⚡ **Fast Inference** - Optimized ONNX Runtime execution
+- 🪟 **Windows Native** - Built with Windows App SDK for optimal performance
+- 📦 **Easy Integration** - Simple NuGet package with automatic model download
+- 🔒 **Type Safe** - Full C# type safety with nullable reference types
 
-## ?? Quick Start
+## 🚀 Quick Start
 
 ### Installation
 
@@ -43,7 +43,7 @@ Console.WriteLine($"Inference Time: {result.InferenceTimeMs}ms");
 analyzer.Dispose();
 ```
 
-## ?? Politeness Levels
+## 📋 Politeness Levels
 
 | Level | Description | Example |
 |-------|-------------|---------|
@@ -52,30 +52,30 @@ analyzer.Dispose();
 | **Neutral** | Straightforward, factual, no emotional tone | "The meeting is at 3pm." |
 | **Impolite** | Disrespectful, rude, dismissive | "This is completely unacceptable!" |
 
-## ??? Project Structure
+## 📁 Project Structure
 
 ```
 PolitenessAnalyzer/
-??? Contoso.AI.PolitenessAnalyzer/           # Main library
-?   ??? PolitenessAnalyzer.cs                # Core analysis engine
-?   ??? PolitenessLevel.cs                   # Politeness level enum
-?   ??? PolitenessAnalysisResponse.cs        # Response model
-?   ??? BertTokenizer.cs                     # BERT tokenization
-??? Contoso.AI.PolitenessAnalyzer.ConsoleTest/ # Console test app
-?   ??? Program.cs                           # Test runner
-??? .github/workflows/                       # CI/CD pipelines
-?   ??? build-and-publish.yml                # Automated build & publish
-??? README.md                                # This file
+├── Contoso.AI.PolitenessAnalyzer/           # Main library
+│   ├── PolitenessAnalyzer.cs                # Core analysis engine
+│   ├── PolitenessLevel.cs                   # Politeness level enum
+│   ├── PolitenessAnalysisResponse.cs        # Response model
+│   └── BertTokenizer.cs                     # BERT tokenization
+├── Contoso.AI.PolitenessAnalyzer.ConsoleTest/ # Console test app
+│   └── Program.cs                           # Test runner
+├── .github/workflows/                       # CI/CD pipelines
+│   └── build-and-publish.yml                # Automated build & publish
+└── README.md                                # This file
 ```
 
-## ??? Requirements
+## ⚙️ Requirements
 
 - **Platform**: Windows 10 (19041) or later
 - **Runtime**: .NET 8.0
 - **SDK**: Windows App SDK 1.8+
 - **Architecture**: x64, x86, or ARM64
 
-## ?? Development Setup
+## 🛠️ Development Setup
 
 ### Prerequisites
 
@@ -104,7 +104,7 @@ dotnet run --project Contoso.AI.PolitenessAnalyzer.ConsoleTest
 
 The ONNX model (Intel polite-guard) is automatically downloaded during the first build. It's cached in the `obj/Models` directory to avoid re-downloading on subsequent builds.
 
-## ?? Testing
+## 🧪 Testing
 
 The project includes a console-based test runner with predefined test cases:
 
@@ -117,19 +117,19 @@ dotnet run --project Contoso.AI.PolitenessAnalyzer.ConsoleTest
 === Politeness Analyzer Console Test ===
 
 Initializing analyzer...
-? Analyzer initialized successfully
+✓ Analyzer initialized successfully
 
 Test 1: "Thank you so much for your help!"
 Expected: Polite
 Actual: Polite
-? PASSED
+✓ PASSED
 
 ...
 
-? All tests passed!
+✓ All tests passed!
 ```
 
-## ?? NuGet Package
+## 📦 NuGet Package
 
 The package is automatically built and published via GitHub Actions on every push to `main`.
 
@@ -149,7 +149,7 @@ dotnet pack Contoso.AI.PolitenessAnalyzer -c Release
 dotnet nuget push "bin/Release/*.nupkg" --api-key YOUR_API_KEY --source https://api.nuget.org/v3/index.json
 ```
 
-## ?? Contributing
+## 🤝 Contributing
 
 Contributions are welcome! Please follow these steps:
 
@@ -166,7 +166,7 @@ Contributions are welcome! Please follow these steps:
 - Code should follow existing style conventions
 - Update documentation as needed
 
-## ?? CI/CD Pipeline
+## 🔄 CI/CD Pipeline
 
 The project uses GitHub Actions for automated builds:
 
@@ -175,7 +175,7 @@ The project uses GitHub Actions for automated builds:
 
 See [GITHUB_ACTIONS_SETUP.md](GITHUB_ACTIONS_SETUP.md) for setup details.
 
-## ?? API Reference
+## 📚 API Reference
 
 ### `PolitenessAnalyzer`
 
@@ -225,7 +225,7 @@ public enum PolitenessLevel
 }
 ```
 
-## ?? Use Cases
+## 💡 Use Cases
 
 - **Customer Support**: Analyze customer messages for sentiment
 - **Content Moderation**: Flag impolite or disrespectful content
@@ -233,7 +233,7 @@ public enum PolitenessLevel
 - **Chat Applications**: Monitor conversation tone
 - **HR Tools**: Analyze workplace communication
 
-## ?? Advanced Configuration
+## 🔧 Advanced Configuration
 
 ### Custom Execution Providers
 
@@ -243,23 +243,23 @@ The analyzer automatically selects the best available execution provider (CPU by
 
 The model is loaded from `Models\polite-guard-model.onnx` in the application's base directory. This can be customized by modifying `PolitenessAnalyzer.GetModelPath()`.
 
-## ?? License
+## 📄 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## ?? Acknowledgments
+## 🙏 Acknowledgments
 
 - **Intel** - For the [polite-guard model](https://huggingface.co/Intel/polite-guard)
 - **Microsoft** - For ONNX Runtime and Windows App SDK
 - **Community** - For feedback and contributions
 
-## ?? Support
+## 📞 Support
 
 - **Issues**: [GitHub Issues](https://github.com/contosomodels/PolitenessAnalyzer/issues)
 - **Discussions**: [GitHub Discussions](https://github.com/contosomodels/PolitenessAnalyzer/discussions)
 - **NuGet**: [Package Page](https://www.nuget.org/packages/Contoso.AI.PolitenessAnalyzer/)
 
-## ??? Roadmap
+## 🗺️ Roadmap
 
 - [ ] Add GPU execution provider support
 - [ ] Support for batch processing
@@ -270,4 +270,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-**Made with ?? by Contoso**
+**Made with ❤️ by Contoso**
