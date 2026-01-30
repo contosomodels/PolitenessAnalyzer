@@ -33,7 +33,7 @@ dotnet add package Contoso.AI.PolitenessAnalyzer
 ## Usage
 
 ```csharp
-using Contoso.AI.PolitenessAnalyzer;
+using Contoso.AI;
 
 // Initialize (call once at startup)
 var readyResult = await PolitenessAnalyzer.EnsureReadyAsync();
