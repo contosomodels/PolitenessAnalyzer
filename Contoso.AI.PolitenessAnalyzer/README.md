@@ -2,7 +2,7 @@
 
 AI-powered politeness analysis for text using ONNX Runtime and a BERT-based model.
 
-> **?? Windows Only**: This package requires Windows 10 SDK version 19041 or later and uses Windows-specific AI APIs.
+> **Windows Only**: This package requires Windows 10 SDK version 19041 or later and uses Windows-specific AI APIs.
 
 ## Features
 
@@ -18,8 +18,8 @@ dotnet add package Contoso.AI.PolitenessAnalysis
 ```
 
 **Platform Requirements:**
-- ? Windows 10 version 2004 (build 19041) or later
-- ? Not compatible with: Linux, macOS, or older Windows versions
+- Windows 10 version 2004 (build 19041) or later
+- Not compatible with: Linux, macOS, or older Windows versions
 
 ## Model Download
 
