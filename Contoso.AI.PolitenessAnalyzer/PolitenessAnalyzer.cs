@@ -57,7 +57,8 @@ public sealed class PolitenessAnalyzer : IDisposable
     {
         try
         {
-            await ExecutionProviderCatalog.GetDefault().EnsureAndRegisterCertifiedAsync();
+            // Don't use WinML EPs for now
+            //await ExecutionProviderCatalog.GetDefault().EnsureAndRegisterCertifiedAsync();
 
             _sharedTokenizer = await Task.Run(() => new BertTokenizer());
 
