@@ -3,7 +3,7 @@ using Microsoft.ML.OnnxRuntime.Tensors;
 using Microsoft.Windows.AI.MachineLearning;
 using System.Runtime.Versioning;
 
-namespace Contoso.AI.PolitenessAnalysis;
+namespace Contoso.AI;
 
 [SupportedOSPlatform("windows10.0.19041.0")]
 public sealed class PolitenessAnalyzer : IDisposable

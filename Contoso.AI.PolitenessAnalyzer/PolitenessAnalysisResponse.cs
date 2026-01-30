@@ -1,4 +1,4 @@
-namespace Contoso.AI.PolitenessAnalysis;
+namespace Contoso.AI;
 
 public class PolitenessAnalysisResponse
 {

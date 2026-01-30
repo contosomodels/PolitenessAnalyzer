@@ -25,6 +25,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+	<PackageReference Include="Contoso.AI.AIFeatureCore" Version="0.0.1-beta" />
     <PackageReference Include="Microsoft.WindowsAppSDK" Version="1.8.260101001" />
     <PackageReference Include="System.Numerics.Tensors" Version="9.0.9" />
   </ItemGroup>
